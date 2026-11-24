@@ -16,18 +16,20 @@
 <body>
     <div class="form-card">
         <h2>➕ Create New Task</h2>
-        
         <form action="/submit-task" method="POST">
             <label>Task Name:</label>
             <input type="text" name="title" required placeholder="Ex: Finish DBMS Project Documentation">
-            
+
             <label>Priority:</label>
             <select name="priority">
                 <option value="LOW">LOW</option>
                 <option value="MEDIUM" selected>MEDIUM</option>
                 <option value="HIGH">HIGH</option>
             </select>
-            
+
+            <label>Deadline (Optional for Spin Reward):</label>
+            <input type="date" name="deadline">
+
             <button type="submit">Save to Database</button>
         </form>
     </div>
