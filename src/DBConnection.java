@@ -10,7 +10,7 @@ public class DBConnection {
 
       try {
          Class.forName("com.mysql.cj.jdbc.Driver");
-         var0 = DriverManager.getConnection("jdbc:mysql://localhost:3306/VSCodeTaskDB", "root", "password");
+         var0 = DriverManager.getConnection("jdbc:mysql://localhost:3306/VSCodeTaskDB", "root", "#Kavi#1974");
       } catch (Exception var2) {
          System.out.println("❌ Database Connection Error: " + var2.getMessage());
       }
